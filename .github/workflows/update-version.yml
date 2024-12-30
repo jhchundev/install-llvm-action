@@ -1,0 +1,48 @@
+name: Scheduled Generate and PR
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs every Sunday at 00:00 UTC
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Generate
+        run: npm run generate
+
+      - name: Check for Changes
+        id: git-check
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            echo "::set-output name=changed::true"
+          else
+            echo "::set-output name=changed::false"
+          fi
+
+      - name: Create Pull Request
+        if: steps.git-check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update generated files
+          branch: generate-update-${{ github.run_number }}
+          title: "📄 Update Generated Files"
+          body: |
+            This PR updates the generated files based on the latest changes.
+          labels: automated update
