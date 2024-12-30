@@ -1,4 +1,4 @@
-name: "Install LLVM and Clang"
+name: "Actions to Install LLVM and Clang"
 description: "Downloads and installs LLVM and Clang binaries."
 
 branding:
