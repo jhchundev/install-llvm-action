@@ -2,6 +2,8 @@
 
 [![Test](https://github.com/KyleMayes/install-llvm-action/actions/workflows/test.yml/badge.svg)](https://github.com/KyleMayes/install-llvm-action/actions/workflows/test.yml)
 
+This is forked repository of [KyleMayes/install-llvm-action](https://github.com/KyleMayes/install-llvm-action) with some modifications.
+
 A GitHub Action for downloading and installing LLVM and Clang binaries.
 
 Supports LLVM and Clang 7.1.0 and later. The binaries will be added to the relevant environment variables for the platform after installation (e.g., `PATH`, `LD_LIBRARY_PATH`, and/or `DYLD_LIBRARY_PATH`).
@@ -14,7 +16,7 @@ Released under the Apache License 2.0.
 
 ```yml
 - name: Install LLVM and Clang
-  uses: KyleMayes/install-llvm-action@v2
+  uses: jhchundev/install-llvm-action@v2
   with:
     version: "10.0"
 ```
@@ -23,7 +25,7 @@ Released under the Apache License 2.0.
 
 ```yml
 - name: Install LLVM and Clang
-  uses: KyleMayes/install-llvm-action@v2
+  uses: jhchundev/install-llvm-action@v2
   with:
     version: "10.0"
     directory: ${{ runner.temp }}/llvm
