@@ -38,7 +38,8 @@
       "20.1.7": "/LLVM-20.1.7-macOS-ARM64.tar.xz",
       "20.1.8": "/LLVM-20.1.8-macOS-ARM64.tar.xz",
       "21.1.6": "/LLVM-21.1.6-macOS-ARM64.tar.xz",
-      "21.1.8": "/LLVM-21.1.8-macOS-ARM64.tar.xz"
+      "21.1.8": "/LLVM-21.1.8-macOS-ARM64.tar.xz",
+      "22.1.0": "/LLVM-22.1.0-macOS-ARM64.tar.xz"
     },
     "x64": {
       "9.0.1": "/clang%2Bllvm-9.0.1-x86_64-apple-darwin.tar.xz",
@@ -144,7 +145,8 @@
       "21.1.5": "/LLVM-21.1.5-Linux-ARM64.tar.xz",
       "21.1.6": "/LLVM-21.1.6-Linux-ARM64.tar.xz",
       "21.1.7": "/LLVM-21.1.7-Linux-ARM64.tar.xz",
-      "21.1.8": "/LLVM-21.1.8-Linux-ARM64.tar.xz"
+      "21.1.8": "/LLVM-21.1.8-Linux-ARM64.tar.xz",
+      "22.1.0": "/LLVM-22.1.0-Linux-ARM64.tar.xz"
     },
     "x64": {
       "7.1.0": "/clang%2Bllvm-7.1.0-x86_64-linux-gnu-ubuntu-14.04.tar.xz",
@@ -198,7 +200,8 @@
       "21.1.5": "/LLVM-21.1.5-Linux-X64.tar.xz",
       "21.1.6": "/LLVM-21.1.6-Linux-X64.tar.xz",
       "21.1.7": "/LLVM-21.1.7-Linux-X64.tar.xz",
-      "21.1.8": "/LLVM-21.1.8-Linux-X64.tar.xz"
+      "21.1.8": "/LLVM-21.1.8-Linux-X64.tar.xz",
+      "22.1.0": "/LLVM-22.1.0-Linux-X64.tar.xz"
     }
   },
   "win32": {
@@ -256,7 +259,8 @@
       "21.1.5": "/LLVM-21.1.5-woa64.exe",
       "21.1.6": "/LLVM-21.1.6-woa64.exe",
       "21.1.7": "/LLVM-21.1.7-woa64.exe",
-      "21.1.8": "/LLVM-21.1.8-woa64.exe"
+      "21.1.8": "/LLVM-21.1.8-woa64.exe",
+      "22.1.0": "/LLVM-22.1.0-woa64.exe"
     },
     "x64": {
       "7.1.0": "/LLVM-7.1.0-win64.exe",
@@ -332,7 +336,8 @@
       "21.1.5": "/LLVM-21.1.5-win64.exe",
       "21.1.6": "/LLVM-21.1.6-win64.exe",
       "21.1.7": "/LLVM-21.1.7-win64.exe",
-      "21.1.8": "/LLVM-21.1.8-win64.exe"
+      "21.1.8": "/LLVM-21.1.8-win64.exe",
+      "22.1.0": "/LLVM-22.1.0-win64.exe"
     }
   }
 }
