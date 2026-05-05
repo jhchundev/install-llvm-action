@@ -3,7 +3,7 @@ import * as https from "https";
 import { Options, getAsset } from "./index";
 
 async function test(os: string, options: Options): Promise<void> {
-  const { specificVersion, url } = getAsset(os, options);
+  const { specificVersion, url } = await getAsset(os, options);
 
   console.log(`Version: ${options.version} => ${specificVersion}`);
   console.log(`URL: ${url}`);
